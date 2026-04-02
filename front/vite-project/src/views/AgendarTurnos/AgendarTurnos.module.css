@@ -1,0 +1,92 @@
+.page {
+    position: relative; /* obligatorio para el before */
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+}
+
+.page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("./src/assets/groceries.jpeg");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.7);  /* 🌙 baja brillo */
+    z-index: -1;
+}
+
+form {
+  background: white;
+  width: 420px;
+  padding: 32px;
+  margin: 50px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 24px;
+  color: #2f3e46;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.inputGroup label {
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: #555;
+}
+
+.inputGroup input, select {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #dde5e1;
+  outline: none;
+  transition: 0.2s;
+}
+
+.inputGroup input:focus, select:focus {
+  border-color: #8fc0a9;
+  box-shadow: 0 0 0 2px rgba(143,192,169,0.2);
+}
+
+.error {
+  padding-top: 5px;
+  color: red;
+  margin-top: 8px;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+}
+
+.submitButton {
+  width: fit-content;
+  display: flex;
+  align-self: center;
+  padding: 10px 15px 10px 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  background-color: #8fc0a9;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.submitButton:hover {
+  background: #6faf95;
+  transform: translateY(-1px);
+}

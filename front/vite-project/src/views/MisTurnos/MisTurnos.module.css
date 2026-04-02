@@ -1,0 +1,40 @@
+.appointmentsPage {
+    position: relative; /* obligatorio para el before */
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+}
+
+.appointmentsPage::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("./src/assets/background.jpeg");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.7);  /* 🌙 baja brillo */
+    z-index: -1;
+}
+
+.appointmentsTitle {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    text-shadow: 3px 3px rgba(0, 0, 0, 1);
+}
+
+.appointmentsList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.appointmentsLoading {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    text-shadow: 3px 3px rgba(0, 0, 0, 1);
+}

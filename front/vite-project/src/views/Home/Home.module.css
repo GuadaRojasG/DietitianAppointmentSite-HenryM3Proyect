@@ -1,0 +1,130 @@
+.home {
+  font-family: 'Inter', sans-serif;
+  background-color: #f7faf9;
+  color: #2f3e3a;
+}
+
+.hero {
+  height: 90vh;
+  background-image: url('./src/assets/fruits.jpeg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 3rem;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(47, 62, 58, 0.55);
+}
+
+.heroContent {
+  position: relative;
+  max-width: 600px;
+  color: #ffffff;
+}
+
+.heroContent h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 3px 3px rgba(0, 0, 0, 1);
+}
+
+.heroContent p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.heroContent label {
+  background-color: #8fc0a9;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+.heroContent label:hover {
+  background-color: #78ad95;
+}
+
+.appLink {
+  font-family: 'Inter', sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.services {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.serviceCard {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.serviceCard:hover {
+  transform: translateY(-6px);
+}
+
+.benefits {
+  background-color: #eaf4f1;
+  padding: 4rem 3rem;
+  text-align: center;
+}
+
+.benefits ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.benefits li {
+  margin: 0.8rem 0;
+  font-size: 1.1rem;
+}
+
+.cta {
+  background: linear-gradient(135deg, #8fc0a9, #6faf95);
+  padding: 5rem 3rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.cta button {
+  margin-top: 10px;
+  padding: 14px 30px;
+  border-radius: 14px;
+  border: none;
+  background: #ffffff;
+  color: #2f3e3a;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.cta button:hover {
+  transform: scale(1.05);
+}
